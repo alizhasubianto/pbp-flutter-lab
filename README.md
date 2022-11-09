@@ -1,4 +1,6 @@
-## Alizha - 2106652000 - D 
+Nama    : Alizha
+NPM     : 2106652000
+Kelas   : D 
 
 # TUGAS 7 - PBP: Elemen Dasar Flutter
 
