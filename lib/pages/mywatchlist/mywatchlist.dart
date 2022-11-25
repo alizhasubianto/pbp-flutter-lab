@@ -45,7 +45,7 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                             color: Colors.white,
                             border: Border.all(
                               width: 2,
-                              color: (snapshot.data![index].fields.watched
+                              color: (snapshot.data![index].fields.watched == "Yes"
                                   ? Colors.green
                                   : Colors.red),
                             ),
@@ -58,6 +58,7 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                                 fontSize: 18.0,
                               ),
                             ),
+                            
                             onTap: () {
                               Navigator.push(
                                 context,
