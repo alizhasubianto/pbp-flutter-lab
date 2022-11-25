@@ -32,7 +32,7 @@ class MyWatchListDetail extends StatelessWidget {
                   children: [
                     const Text('Release Date: ',
                         style: TextStyle(fontWeight: FontWeight.bold)),
-                    Text(mwl.fields.releaseDate),
+                    Text('${mwl.fields.releaseDate}'),
                   ],
                 ),
                 const SizedBox(height: 5),
@@ -40,7 +40,7 @@ class MyWatchListDetail extends StatelessWidget {
                   children: [
                     const Text('Rating: ',
                         style: TextStyle(fontWeight: FontWeight.bold)),
-                    Text('${mwl.fields.rating}/5'),
+                    Text('${mwl.fields.rating}'),
                   ],
                 ),
                 const SizedBox(height: 5),
@@ -48,7 +48,7 @@ class MyWatchListDetail extends StatelessWidget {
                   children: [
                     const Text('Status: ',
                         style: TextStyle(fontWeight: FontWeight.bold)),
-                    Text(mwl.fields.watched == "Yes" ? 'watched' : 'not watched'),
+                    Text('${mwl.fields.watched}'),
                   ],
                 ),
                 const SizedBox(height: 5),
@@ -59,7 +59,7 @@ class MyWatchListDetail extends StatelessWidget {
                     children: [
                       const Text('Review: ',
                           style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text(mwl.fields.review),
+                      Text('${mwl.fields.review}'),
                     ],
                   ),
                 ),

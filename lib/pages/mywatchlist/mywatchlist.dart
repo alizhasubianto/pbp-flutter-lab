@@ -58,14 +58,6 @@ class _MyWatchListPageState extends State<MyWatchListPage> {
                                 fontSize: 18.0,
                               ),
                             ),
-                            trailing: Checkbox(
-                              value: snapshot.data![index].fields.watched,
-                              onChanged: (bool? value) {
-                                setState(() {
-                                  snapshot.data![index].fields.watched = value!;
-                                });
-                              },
-                            ),
                             onTap: () {
                               Navigator.push(
                                 context,
