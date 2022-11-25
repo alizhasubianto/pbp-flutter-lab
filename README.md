@@ -90,3 +90,36 @@ yang bekerja dengan konsep _Last in, First Out_ atau LIFO di mana _stack_-nya di
 3. Membuat _file_ `initialbudget.dart` sebagai model untuk budget.
 4. Membuat _file_ `form.dart` yang berisikan _form field_ sebagai _form_ untuk _input_ data _user_ dengan menggunakan _widget_ `TextFormField` untuk judul dan nominal budget, _widget_ `DropDownButtonFormField` untuk _input user_ dalam bentuk _drop drown_  untuk memilih jenis _budget_ (pemasukan atau pengeluaran), _widget_ `showDatePicker` untuk tanggal _budget_, dan _widget_ `TextButton` untuk menampilkan data _budget_ yang sudah di-_input_ dalam bentuk pop up dialog.
 5. Membuat _file_ `databudget.dart` untuk mengambil data yang sudah di-_input_ _user_ sebelumnya dan menampilkannya dalam bentuk _card_ pada halaman Data Budget.
+
+# TUGAS 9 - PBP: Integrasi Web Service pada Flutter
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+Ya, kita bisa melakukan pengambilan data JSON tanpa membuat model terlebih dahulu. Akan tetapi, pengambilan data JSON tanpa membuat model dinilai tidak lebih baik, karena tujuan dari dibuatnya model sebelum melakukan pengambilan data adalah untuk mengurangi risiko kesalahan dalam pengambilan data, sehingga, jika pengambilan data dilakukan tanpa membuat model terlebih dahulu, akan meningkatkan risiko kesalahan dalam melakukan proses pengambilan atau pengiriman data.
+
+## Sebutkan _widget_ apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+1. `AppBar`: menampilkan _toolbar_
+2. `Scaffold`: mengimplementasikan struktur umum desain dari material _layout_.
+5. `Text`: menampilkan teks pada layar aplikasi.
+6. `Column`: menampilkan _children_ dalam bentuk array vertikal.
+7. `Row`: menampilkan _children_ dalam bentuk array horizontal.
+8. `Drawer`: _widget_ untuk membuat _drawer material design_.
+9. `FutureBuilder`: untuk membuat _widget_ berdasarkan _latest snapshot_ dari interaksi dengan sebuah _Future_.
+10. `ListView`: untuk menampilkan _item_ secara linear.
+12. `MaterialPageRoute`: widget untuk membuat MaterialPageRoute yang isinya ditentukan oleh builder.
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+1. Menambahkan dependensi `http` yang digunakan untuk pertukaran data melalui HTTP _request_
+2. Membuat model dari data yang akan diambil
+3. Membuat HTTP _request_ menggunakan _dependency_ `http` dengan _method_ GET
+4. Data JSON akan di-_decode_, lalu data tersebut akan dikonversi sesuai dengan model yang sudah dibuat
+5. Data yang telah dikonversi akan ditampilkan
+
+## Implementasi _Checklist_
+1. Membuat folder pages dan file `mywatchlist.dart` yang akan menampilkan semua watchlist
+2. Menambahkan tombol navigasi baru pada drawer, yaitu navigasi yang mengarah ke halaman _mywatchlist_
+3. Membuat _file_ baru yang bernama `modelwatchlist.dart` yang berisi model dari _mywatchlist_
+4. Menambahkan _dependency_ `http` untuk melakukan _fetch_ data
+5. Membuat folder _function_ yang berisikan _file_ `watchlist_fetch.dart` dan menggunakan _function_ fetch data untuk melakukan _fetch_ data dari tugas 3
+6. Membuat `mywatchlist_detail.dart` yang akan menampilkan halaman detail dari watch list.
+
+

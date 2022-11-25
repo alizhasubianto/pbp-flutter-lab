@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/drawer.dart';
-import 'package:counter_7/initialbudget.dart';
 import 'package:flutter/services.dart';
+import 'package:counter_7/pages/drawer.dart';
+import 'package:counter_7/model/initialbudget.dart';
 
 
 class MyFormPage extends StatefulWidget {
